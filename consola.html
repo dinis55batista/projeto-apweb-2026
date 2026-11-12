@@ -9,6 +9,7 @@
 </head>
 <body class="bg-gray-100 min-h-screen text-gray-800 flex flex-col justify-between">
 
+    <!-- CABEÇALHO / BARRA DE NAVEGAÇÃO -->
     <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
             
@@ -22,11 +23,13 @@
                 </div>
             </div>
 
+            <!-- Barra de Pesquisa -->
             <div class="w-full md:w-1/3 relative">
                 <label for="pesquisa-consolas" class="sr-only">Pesquisar consolas</label>
                 <input type="text" id="pesquisa-consolas" placeholder="Pesquisar consolas ou jogos..." class="w-full bg-gray-100 border border-gray-300 rounded-lg py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
+            <!-- Navegação Desktop -->
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
                 <a href="index.html" class="hover:text-blue-600 transition">Início</a>
                 <a href="consola.html" class="text-blue-600 font-semibold" aria-current="page">Consolas</a>
@@ -41,15 +44,17 @@
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full pb-20 md:pb-6">
         <div class="mb-6">
             <h1 class="text-2xl font-bold text-gray-900">Escolha a Consola</h1>
-            <p class="text-sm text-gray-500">Filtre os jogos disponíveis para troca de acordo com a sua plataforma PlayStation.</p>
+            <p class="text-sm text-gray-500">Filtre os jogos disponíveis para troca de acordo com a sua plataforma PlayStation</p>
         </div>
 
+        <!-- Lista de Consolas -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             
-            <!-- PS5 -->
+            <!-- Item 1: PS5 -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/playstation5.jpg" alt="Consola PlayStation 5" class="w-full h-full object-contain">
@@ -59,7 +64,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PS4 -->
+            <!-- Item 2: PS4 -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/playstation4.jpg" alt="Consola PlayStation 4" class="w-full h-full object-contain">
@@ -69,7 +74,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PS3 -->
+            <!-- Item 3: PS3 -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/playstation3.jpg" alt="Consola PlayStation 3" class="w-full h-full object-contain">
@@ -79,7 +84,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PS2 -->
+            <!-- Item 4: PS2 -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/playstation2.jpg" alt="Consola PlayStation 2" class="w-full h-full object-contain">
@@ -89,7 +94,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PS1 -->
+            <!-- Item 5: PS1 -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/playstation1.jpg" alt="Consola PlayStation 1" class="w-full h-full object-contain">
@@ -99,7 +104,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PSP -->
+            <!-- Item 6: PSP -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/psp.jpg" alt="Consola PlayStation Portable" class="w-full h-full object-contain">
@@ -109,7 +114,7 @@
                 <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Ver Jogos Disponíveis</span>
             </a>
 
-            <!-- PS Vita -->
+            <!-- Item 7: PS Vita -->
             <a href="index.html" class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center cursor-pointer">
                 <div class="w-full h-24 mb-4 flex items-center justify-center">
                     <img src="img/psvita.jpg" alt="Consola PlayStation Vita" class="w-full h-full object-contain">
@@ -122,6 +127,7 @@
         </div>
     </main>
 
+    <!-- MENU INFERIOR MOBILE -->
     <nav class="md:hidden bg-white border-t border-gray-200 fixed bottom-0 left-0 right-0 py-2.5 px-6 flex justify-between items-center z-50 text-xs font-medium text-gray-600 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
         <a href="index.html" class="hover:text-blue-600 flex flex-col items-center">Início</a>
         <a href="consola.html" class="text-blue-600 flex flex-col items-center">Consolas</a>
@@ -129,6 +135,7 @@
         <a href="perfil.html" class="hover:text-blue-600 flex flex-col items-center">Perfil</a>
     </nav>
 
+    <!-- RODAPÉ -->
     <footer class="bg-white border-t border-gray-200 mt-16 py-8 text-xs text-gray-500">
         <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>© 2026 PlayTrade</p>

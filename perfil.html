@@ -9,6 +9,7 @@
 </head>
 <body class="bg-gray-100 min-h-screen text-gray-800 flex flex-col justify-between">
 
+    <!-- CABEÇALHO / BARRA DE NAVEGAÇÃO -->
     <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
             
@@ -22,11 +23,13 @@
                 </div>
             </div>
 
+            <!-- Barra de Pesquisa -->
             <div class="w-full md:w-1/3 relative">
                 <label for="pesquisa-perfil" class="sr-only">Pesquisar jogos</label>
                 <input type="text" id="pesquisa-perfil" placeholder="Pesquisar jogos..." class="w-full bg-gray-100 border border-gray-300 rounded-lg py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
 
+            <!-- Navegação Desktop -->
             <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
                 <a href="index.html" class="hover:text-blue-600 transition">Início</a>
                 <a href="consola.html" class="hover:text-blue-600 transition">Consolas</a>
@@ -41,21 +44,22 @@
         </div>
     </header>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full pb-20 md:pb-6">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
             
             <!-- Coluna da Esquerda: Identificação -->
             <aside class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col items-center text-center h-full py-16">
                 <div class="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-3 overflow-hidden">
-                    <img src="img/perfil.jpg" alt="Fotografia de perfil de Jony123" class="w-full h-full object-cover">
+                    <img src="img/perfil.jpg" alt="Fotografia de perfil de PinsGamer" class="w-full h-full object-cover">
                 </div>
                 
-                <h1 class="font-bold text-xl text-gray-900">Jony123</h1>
-                <p class="text-md text-gray-500">João Francisco</p>
+                <h1 class="font-bold text-xl text-gray-900">PinsGamer</h1>
+                <p class="text-md text-gray-500">André Pina</p>
                 <p class="text-md text-gray-500 flex mt-1"> Coimbra, Portugal </p>
             </aside>
 
-            <!-- Coluna da Direita: Biblioteca -->
+            <!-- Coluna da Direita: Biblioteca e Wishlist -->
             <section class="md:col-span-3 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
                 
                 <div class="flex border-b border-gray-200 mb-6">
@@ -63,8 +67,10 @@
                     <button class="pb-3 px-4 text-sm font-medium text-gray-500 hover:text-gray-700 transition">Wishlist</button>
                 </div>
 
+                <!-- Grelha de Jogos do Utilizador -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <!-- Jogo 1 -->
+                    
+                    <!-- Item 1 -->
                     <article class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between">
                         <div>
                             <div class="bg-gray-100 rounded-lg h-48 mb-3 flex items-center justify-center overflow-hidden p-2">
@@ -83,7 +89,7 @@
                         </div>
                     </article>
 
-                    <!-- Jogo 2 -->
+                    <!-- Item 2 -->
                     <article class="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col justify-between">
                         <div>
                             <div class="bg-gray-100 rounded-lg h-48 mb-3 flex items-center justify-center overflow-hidden p-2">
@@ -106,6 +112,7 @@
         </div>
     </main>
 
+    <!-- MENU INFERIOR MOBILE -->
     <nav class="md:hidden bg-white border-t border-gray-200 fixed bottom-0 left-0 right-0 py-3 px-6 flex justify-between items-center z-50 text-xs font-medium text-gray-600 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
         <a href="index.html" class="hover:text-blue-600 transition">Início</a>
         <a href="consola.html" class="hover:text-blue-600 transition">Consolas</a>
@@ -113,6 +120,7 @@
         <a href="perfil.html" class="text-blue-600 font-semibold transition">Perfil</a>
     </nav>
 
+    <!-- RODAPÉ -->
     <footer class="bg-white border-t border-gray-200 mt-16 py-8 text-xs text-gray-500">
         <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>© 2026 PlayTrade</p>
